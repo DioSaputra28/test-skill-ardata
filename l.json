@@ -1,0 +1,12 @@
+{
+    "id": "68c61e6a58b3de63a2c860ec",
+    "external_id": "TABUNGAN-100",
+    "user_id": "685e02dbba386ad7b2583292",
+    "status": "PENDING",
+    "merchant_name": "Costubot",
+    "merchant_profile_picture_url": "https://du8nwjtfkinx.cloudfront.net/xendit.png",
+    "amount": 100000,
+    "description": "MENABUNG",
+    "expiry_date": "2025-09-15T01:46:19.036Z",
+    "invoice_url": "https://checkout-staging.xendit.co/web/68c61e6a58b3de63a2c860ec"
+}
