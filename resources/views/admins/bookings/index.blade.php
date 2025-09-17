@@ -28,13 +28,6 @@
                 <h3 class="text-base font-medium text-gray-800 dark:text-white/90">
                     Daftar Booking
                 </h3>
-                <a href="#" class="inline-flex items-center gap-2 px-4 py-3 text-sm font-medium text-white transition rounded-lg bg-brand-500 shadow-theme-xs hover:bg-brand-600">
-                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M10 4.16667V15.8333" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                        <path d="M4.16667 10H15.8333" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                    </svg>
-                    Tambah Booking
-                </a>
             </div>
 
             <!-- Filter Section -->
@@ -259,13 +252,6 @@
                                             <a href="{{ route('bookings.edit', $booking->booking_id) }}" class="rounded-md bg-warning-500/10 px-3 py-1 text-xs font-medium text-warning-500 hover:bg-warning-500/20">
                                                 Edit
                                             </a>
-                                            <form action="#" method="POST" class="inline" onsubmit="return confirm('Apakah Anda yakin ingin menghapus booking ini?');">
-                                                @csrf
-                                                @method('DELETE')
-                                                <button type="submit" class="rounded-md bg-error-500/10 px-3 py-1 text-xs font-medium text-error-500 hover:bg-error-500/20">
-                                                    Hapus
-                                                </button>
-                                            </form>
                                         </div>
                                     </td>
                                 </tr>

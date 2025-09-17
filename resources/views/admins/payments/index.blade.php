@@ -28,13 +28,6 @@
                 <h3 class="text-base font-medium text-gray-800 dark:text-white/90">
                     Payments List
                 </h3>
-                <a href="#" class="inline-flex items-center gap-2 px-4 py-3 text-sm font-medium text-white transition rounded-lg bg-brand-500 shadow-theme-xs hover:bg-brand-600">
-                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M10 4.16667V15.8333" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                        <path d="M4.16667 10H15.8333" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg>
-                    Tambah Data
-                </a>
             </div>
             
             <div class="p-5 border-t border-gray-100 dark:border-gray-800 sm:p-6">

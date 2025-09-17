@@ -185,7 +185,7 @@
           <!-- Menu Item Profile -->
           <li>
             <a
-              href=""
+              href="{{ route('costumers.index') }}"
               class="menu-item group"
               :class="page === 'profile' ? 'menu-item-active' : 'menu-item-inactive'"
             >
@@ -194,7 +194,7 @@
                 class="menu-item-text"
                 :class="sidebarToggle ? 'lg:hidden' : ''"
               >
-                Profile
+                Costumer
               </span>
             </a>
           </li>

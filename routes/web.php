@@ -11,7 +11,7 @@ use App\Http\Controllers\ShipController;
 use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Route;
 
-Route::get('/', [CostumerController::class, 'index'])->name('costomer');
+Route::get('/', [CostumerController::class, 'dashboard'])->name('costomer');
 Route::get('/ship_search', [CostumerController::class, 'searchResults'])->name('customer.ship_search');
 Route::get('/booking/{id}', [BookingController::class, 'create'])->name('customer.booking');
 Route::post('/booking/store', [BookingController::class, 'store'])->name('customers.booking.store');
@@ -22,6 +22,8 @@ Route::post('/payments/webhook', [PaymentController::class, 'webhook'])->name('p
 
 Route::get('/login', [AuthController::class, 'login'])->name('login');
 Route::post('/proses-login', [AuthController::class, 'prosesLogin'])->name('prosesLogin');
+Route::get('/register', [AuthController::class, 'register'])->name('register');
+Route::post('/proses-register', [AuthController::class, 'prosesRegister'])->name('prosesRegister');
 
 Route::middleware(['auth'])->group(function () {
     Route::post('/logout', [AuthController::class, 'logout'])->name('logout');
@@ -79,4 +81,7 @@ Route::middleware(['auth'])->group(function () {
     Route::get('/bookings/{id}', [BookingController::class, 'show'])->name('bookings.show');
     Route::get('/bookings/edit/{id}', [BookingController::class, 'edit'])->name('bookings.edit');
     Route::put('/bookings/update/{id}', [BookingController::class, 'update'])->name('bookings.update');
+
+    Route::get('/costumers', [CostumerController::class, 'index'])->name('costumers.index');
+    Route::get('/costumers/{id}', [CostumerController::class, 'show'])->name('costumers.show');
 });

@@ -281,14 +281,6 @@ class BookingController extends Controller
         return redirect()->route('bookings.index')->with('success', 'Booking berhasil diperbarui.');
     }
 
-    /**
-     * Remove the specified resource from storage.
-     */
-    public function destroy(string $id)
-    {
-        //
-    }
-
     public function booking(string $token, string $code)
     {
         $booking = BookingModel::with(['costumer', 'jadwal'])->where('token', $token)->where('booking_code', $code)->first();
